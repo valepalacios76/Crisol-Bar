@@ -1,0 +1,491 @@
+/* Paleta de colores
+oscuro: #2d2220
+oscuro-medio: #382926
+claro-medio: #5a413c
+claro: #bc8c64
+blanco: #ffffff */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Krub:wght@400;700&display=swap');
+/* font-family: 'Josefin Sans' */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 2.5rem;
+    background-color:#5a413c
+}
+
+
+/*! header ------------------------------------------------------------------------------------------------ */
+.nav{
+    position: sticky;
+    top: 0;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header nav{
+    margin-right: 50px;
+}
+
+header img{
+    margin-left: 20px;
+    width: 80px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header li{
+    margin: 0 17px 0 17px;
+}
+
+header a{
+    color: #2d2220;
+    text-decoration: none;
+}
+
+
+/*! main de index ------------------------------------------------------------------------------------------------*/
+
+/* banner */
+main{
+    color: #ffffff;
+    background-color: #5a413c;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.subtitulo{
+    font-weight: 300;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.banner{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-image: url(../medios/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner img{
+    width: 65px;
+    margin-bottom: 15px;
+}
+
+/* primera sección */
+section h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+main p{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+main div h3{
+    font-size: 2rem;
+    margin: 50px;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 150px 10px 150px;
+    text-align: justify;
+}
+
+.informacion h2{
+    padding: 50px;
+    width: 50%;
+    background-color: #382926;
+    border: #ffffff solid 1px;
+}
+
+.informacion p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+section h2 span{
+    font-weight: 300;
+    display: block;
+}
+
+/* segunda sección */
+.caracteristicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.caracteristicas p{
+    margin: 50px
+}
+
+.calidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30.3%;
+    background-color: #382926
+}
+
+.calidad img{
+    width: 70%;
+    border: #5a413c solid 2px;
+    padding: 8px;
+}
+
+.calidad p{
+    margin: 30px 60px;
+    text-align: justify;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30.3%;
+}
+
+.servicios img{
+    width: 70%;
+    border: #382926 solid 2px;
+    padding: 8px;
+}
+
+.servicios p{
+    margin: 30px 60px;
+    text-align: justify; 
+}
+
+.variedad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30.3%;
+    background-color: #382926
+}
+
+.variedad img{
+    width: 70%;
+    border: #5a413c solid 2px;
+    padding: 8px;
+}
+
+.variedad p{
+    margin: 30px 60px;
+    text-align: justify;
+}
+
+/* descripción */
+
+.segunda-info{
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+/* tercer sección */
+.destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos{
+    margin: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: #2d2220 solid 2px;
+    width: 60%;
+    height: 50%
+}
+
+.productos img{
+    width: 30%;
+    height: 50%;
+    text-align: justify;
+}
+
+.texto-productos{
+    padding-left: 10px;
+    width: 400px;
+    height: 300px;
+}
+
+
+/*! footer ------------------------------------------------------------------------------------------------*/
+footer{
+    height: 50px;
+    padding: 0 15px 0 15px; 
+    background-color: #2d2220;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer svg{
+    margin-top: 5px;
+    width: 30px;
+}
+
+footer p{
+    margin: 5px;
+}
+
+/*! mediaQ de INDEX ------------------------------------------------------------------------------------------------*/
+@media (min-width:367px) and (max-width: 480px) {
+    /* main mobile */
+    main{
+        overflow: auto;
+        align-items: center;
+    }
+    /* banner */
+    .banner{
+        width: 100%;
+        height: 130px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    section h1{
+        font-size: 2rem;
+    }
+
+    .banner img{
+        width: 40px;
+        padding-top: 10px;
+    }
+
+    .subtitulo{
+        font-size: 1.5rem;
+    }
+
+    /* primera sección */
+    .informacion{
+        justify-items: center;
+        width: 70%;
+    }
+
+    .informacion h2{
+        width: 270px;
+        padding: 10px;
+    }
+    section h2{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    section div p{
+        font-size: 1.5rem;
+    }
+
+    /* segunda sección */
+    .caracteristicas{
+        flex-direction: column;
+    }
+    
+        /* calidad y origen */
+    .calidad{
+        width: 100%;
+    }
+
+    .calidad img{
+        width: 70%;
+    }
+
+    .calidad p{
+    margin: 10px 60px;
+    }
+
+    .calidad h3{
+        margin: 20px 80px 10px 80px;
+    }
+
+        /* servicios personalizados */
+    .servicios{
+        width: 100%;
+    }
+
+    .servicios img{
+        width: 70%;
+    }
+
+    .servicios p{
+    margin: 10px 60px;
+    }
+
+    .servicios h3{
+        margin: 20px 80px 10px 80px;
+    }
+
+        /* variedad de productos */
+    .variedad{
+        width: 100%;
+    }
+
+    .variedad img{
+        width: 70%;
+
+    }
+
+    .variedad p{
+    margin: 10px 60px;
+    }
+
+    .variedad h3{
+        margin: 20px 80px 10px 80px;
+    }
+    
+    /* destacados */
+    .segunda-info{
+        border: #2d2220 solid 2px;
+        padding: 10px;
+        text-align: center;
+        margin: 25px
+    }
+
+    /* tercera sección */
+        /* Ethiopian */
+    .destacados h2{
+        font-size: 2rem;
+    }
+
+    .bg-ethiopian{
+        overflow: auto;
+        width: 100%;
+        background-image: url(../medios/ethiopian.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bg-mobile h3{
+        background-color: #2d2220;
+        border: #ffffff solid 2px;
+        text-align: center;
+        font-size: 1.9rem;
+        padding: 5px;
+    }
+
+    .texto-productos{
+        padding-left: 0;
+    }
+
+    .texto-productos p{
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .productos img{
+        display: none;
+    }
+
+        /* geisha */
+    .bg-geisha{
+        overflow: auto;
+        width: 100%;
+        background-image: url(../medios/geisha.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bg-mobile h3{
+        background-color: #2d2220;
+        border: #ffffff solid 2px;
+        text-align: center;
+        font-size: 1.9rem;
+        padding: 5px;
+    }
+
+        /* tarrazú */
+    .bg-tarrazu{
+        overflow: auto;
+        box-sizing:content-box;
+        width: 100%;
+        background-image: url(../medios/tarrazu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .bg-mobile h3{
+        background-color: #2d2220;
+        border: #ffffff solid 2px;
+        text-align: center;
+        font-size: 1.9rem;
+        padding: 5px;
+    }
+
+    /* footer */
+    footer{
+        height: auto;
+        padding: 0 15px 0 15px; 
+        background-color: #2d2220;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .derechos{
+        margin-left: 0;
+        text-align: center;
+    }
+}
