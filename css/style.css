@@ -42,6 +42,7 @@ header{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    z-index: 1000
 }
 
 header nav{
@@ -259,7 +260,7 @@ section h2 span{
     height: 300px;
 }
 
-/*! main de index ------------------------------------------------------------------------------------------------*/
+/*! main de menú ------------------------------------------------------------------------------------------------*/
 .main-menu{
     display: flex;
     flex-direction: row;
@@ -350,16 +351,118 @@ div p{
 
 .precios4{
     grid-area: precios4;
+    margin-top: 70px;
 }
 
+/*! main sobre nosotros -----------------------------------------------------------------------------------*/
+/* primer sección */
+.titulo-sobre-nosotros{
+    text-align:start;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 3rem;
+}
 
+.sobre-nosotros{
+    display: flex;
+}
 
+.historia{
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px 20px 40px
+}
 
+/* segunda sección */
+.caracteristicas-ns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:#382926;
+    margin-bottom: 30px;
+}
 
+.c1{
+    text-align: center;
+    padding: 20px;
+}
 
+.c1 h2{
+    font-size: 3rem;
+}
 
+/* tercer sección */
+.tarjetas{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 50px;
+}
 
+.nombre{
+    margin: 5px;
+    text-align: center;
+    padding: 0;
+}
 
+.elementos{
+    align-items: center;
+    height: 300px;
+}
+
+.imagen{
+    width: 90%;
+    padding-top: 10px;
+}
+
+.texto-tarjeta{
+    padding: 0;
+    margin: 0 10px;
+    font-weight: 300;
+    text-align: start;
+}
+
+.card-body{
+    padding: 0;
+}
+
+/* cuarta sección */
+.cuarta-seccion{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slider{
+    width: 45%;
+    padding: 30px;
+    background-color: #382926;
+}
+
+.destaca{
+    background-color: #382926;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-around
+}
+
+.cualidades{
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+li{
+    padding-top: 30px;
+}
+
+li span{
+    font-weight: 400;
+    display: block;
+
+}
 /*! footer ------------------------------------------------------------------------------------------------*/
 footer{
     height: 50px;
