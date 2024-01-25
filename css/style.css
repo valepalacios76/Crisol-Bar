@@ -517,7 +517,7 @@ form button{
 }
 
 form button:hover{
-    background-color:#d3d3d3
+    background-color:#e2e2e2
 }
 
 .container-form2{
@@ -564,7 +564,56 @@ form button:hover{
 .dos-tarjetas{
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 20px;
 }
+
+/*! main de faq -------------------------------------------------------------------------------------------*/
+.container-gral{
+    background-image: url(../medios/fondo-granos.jpg);
+    background-size:contain
+}
+.grupo{
+    margin: 60px;
+}
+
+.h1faq{
+    text-align: center;
+}
+
+.h2faq{
+    font-size: 2rem;
+}
+
+.container{
+    width: 60%;
+    background-color: #2d2220;
+}
+
+.pregunta{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;  
+    margin: 10px;
+}
+
+.respuesta{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.card-header{
+    background-color:#5a413c;
+}
+
+
+.card{
+    background-color:#382926
+}
+
+
+
 
 
 
