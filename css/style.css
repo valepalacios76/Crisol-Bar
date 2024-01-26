@@ -914,3 +914,85 @@ footer p{
         padding: 0 10px;
     }
 }
+
+/*! mediaQ SOBRE NOSOTROS -----------------------------------------------------------------------------------------*/
+@media (min-width:367px) and (max-width: 480px){
+    .titulo-sobre-nosotros{
+        text-align:center;
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+    .sobre-nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    iframe {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .historia{
+        width: 100%;
+    }
+
+    .historia p{
+        font-size: 1.7rem;
+        width: 100%;
+        text-align: justify;
+        padding-bottom: 20px;
+    }
+
+    .caracteristicas-ns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color:#382926;
+        margin-bottom: 30px;
+    }
+
+    .tarjetas{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin-bottom: 0px;
+    }
+
+    .nombre{
+        color:#ffffff
+    }
+
+    .texto-tarjeta{
+        color: #ffffff;
+    }
+
+    .elementos{
+        margin-top: 20px;
+    }
+
+    .destaca{
+        background-color: #382926;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider{
+        width: 90%;
+    }
+
+    .cualidades{
+        width: 90%;
+        font-size: 1.7rem;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+
+    li{
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+} 
