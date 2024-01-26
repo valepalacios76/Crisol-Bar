@@ -920,7 +920,9 @@ footer p{
     .titulo-sobre-nosotros{
         text-align:center;
         font-size: 2.5rem;
-        margin-top: 20px;
+        padding: 0;
+        margin: 20px 0 ;
+        margin-bottom: 0;
     }
 
     .sobre-nosotros{
@@ -996,3 +998,63 @@ footer p{
         padding-bottom: 20px;
     }
 } 
+
+/*! mediaQ CONTACTO ---------------------------------------------------------------------------------------------*/
+@media (min-width:367px) and (max-width: 480px){
+    .tc2{
+        text-align: center;
+        margin: 15px 0 0 0;
+    }
+
+    .mensaje{
+        font-size: 2rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .titulo-contacto{
+        font-size: 2.5rem;
+        padding: 0;
+        margin: 15px 0 ;
+    }
+
+    .dos-tarjetas{
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input, textarea{
+        width: 80%;
+    }
+
+    .formulario{
+        width: 70%;
+        align-items: center;
+    }
+
+    .container-form2{
+        position: initial;
+        width: 90%;
+    }
+
+    .icon1{
+        width: 20px;
+        margin-top: 47px
+    }
+    
+    .icon2{
+        width: 20px;
+        margin-top: 40px
+    }
+    
+    .icon3{
+        width: 20px;
+            margin-top: 15px
+    }
+
+    svg{
+        display: flex;
+        flex-direction: column;
+    }
+}
