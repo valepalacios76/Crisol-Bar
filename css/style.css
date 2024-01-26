@@ -614,9 +614,6 @@ form button:hover{
 
 
 
-
-
-
 /*! footer ------------------------------------------------------------------------------------------------*/
 footer{
     height: 50px;
@@ -635,6 +632,7 @@ footer a{
 }
 
 footer svg{
+    display: inline;
     margin-top: 5px;
     width: 30px;
 }
