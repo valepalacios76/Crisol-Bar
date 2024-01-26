@@ -846,3 +846,71 @@ footer p{
         text-align: center;
     }
 }
+
+/*! mediaQ de MENÚ ------------------------------------------------------------------------------------------------*/
+@media (min-width:367px) and (max-width: 480px){
+    .menu{
+        background-color:white;
+        width: 100%;
+        row-gap: 0;
+        height: 900px;
+    }
+
+    .titulo-menu{
+        padding: 0;
+        margin: 0;
+    }
+
+    .texto{
+        color:#2d2220;
+        font-size: 7rem;
+        padding-top: 10px;
+    }
+
+    .bebidas-calientes{
+        color: #2d2220;
+        padding: 0 0 0 15px;
+        margin: 0;
+    }
+
+    .bebidas-frias{
+        color: #2d2220;
+        padding: 0 0 0 15px;
+    }
+
+    .desayunos{
+        color: #2d2220;
+        padding: 0 0 0 15px;
+        margin: 0;
+    }
+
+    .tortas{
+        color: #2d2220;
+        padding: 0 0 0 15px;
+        margin: 0;
+    }
+
+    .precios1{
+        color: #2d2220;
+        margin-top: 17px;
+        padding: 0 10px;
+    }
+    
+    .precios2{
+        color: #2d2220;
+        margin-top: 17px;
+        padding: 0 10px;
+    }
+    
+    .precios3{
+        color: #2d2220;
+        margin-top: 17px;
+        padding: 0 10px;
+    }
+
+    .precios4{
+        color: #2d2220;
+        margin-top: 17px;
+        padding: 0 10px;
+    }
+}
