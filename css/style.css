@@ -282,10 +282,10 @@ section h2 span{
     width: 50%;
     height: 1000px;
     grid-template-areas:
-    "titulo-menu    titulo-menu   division   bebidas-calientes   precios2"
-    "bebidas-frias  precios1      division   bebidas-calientes   precios2"
-    "bebidas-frias  precios1      division   desayunos           precios3"
-    "tortas         precios4      division   desayunos           precios3";
+    "titulo-menu    titulo-menu     division   bebidas-calientes   precios-calientes"
+    "bebidas-frias  precios-frias   division   bebidas-calientes   precios-calientes"
+    "bebidas-frias  precios-frias   division   desayunos           precios-desayunos"
+    "tortas         precios-tortas  division   desayunos           precios-desayunos";
     row-gap: 30px;
 }
 
@@ -334,23 +334,23 @@ div p{
 }
 
 /* precios */
-.precios1{
-    grid-area: precios1;
+.precios-frias{
+    grid-area: precios-frias;
     margin-top: 68px;
 }
 
-.precios2{
-    grid-area: precios2;
+.precios-calientes{
+    grid-area: precios-calientes;
     margin-top: 72px;
 }
 
-.precios3{
-    grid-area: precios3;
+.precios-desayunos{
+    grid-area: precios-desayunos;
     margin-top: 68px;
 }
 
-.precios4{
-    grid-area: precios4;
+.precios-tortas{
+    grid-area: precios-tortas;
     margin-top: 70px;
 }
 
@@ -890,25 +890,25 @@ footer p{
         margin: 0;
     }
 
-    .precios1{
+    .precios-frias{
         color: #2d2220;
         margin-top: 17px;
         padding: 0 10px;
     }
     
-    .precios2{
+    .precios-calientes{
         color: #2d2220;
         margin-top: 17px;
         padding: 0 10px;
     }
     
-    .precios3{
+    .precios-desayunos{
         color: #2d2220;
         margin-top: 17px;
         padding: 0 10px;
     }
 
-    .precios4{
+    .precios-tortas{
         color: #2d2220;
         margin-top: 17px;
         padding: 0 10px;

@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la apasionante historia de Café Crisol, una cafetería con más de 35 años de experiencia en la creación de momentos inolvidables alrededor del café.">
+    <meta name="keywords" content="cafe, crisol, cafetería, café de especialidad, arte latte, equipo, fundadores, pasion, sobre nosotros, granos de cafe">
     <link rel="shortcut icon" href="../medios/favicon1.PNG" type="image/x-icon">
     
-        <!-- Css BS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Css BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-        <!-- Css propio -->
+    <!-- Css propio -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Sobre nosotros</title>
+
+    <title>Crisol Bar - Sobre nosotros</title>
 </head>
 
-<body> 
+<body>
+    <!--! HEADER  ------------------------------------------------------------------------------------->
     <header>
         <!-- logo -->
-        <a href="../index.html"><img src="../medios/logo.PNG" alt="Logo de la empresa"></a>
+        <a href="../index.html"><img src="../medios/logo.PNG" alt="Logo de la empresa Crisol Bar"></a>
 
-        <!-- !NAV DE BS -->
+        <!-- nav de BS -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,11 +51,10 @@
           </nav>
     </header>
 
-    <!-- main -->
-    <main class=>
-        <h1 class="titulo-sobre-nosotros">Sobre nosotros</h1>
-
+    <!--! MAIN SOBRE NOSOTROS --------------------------------------------------------------------------->
+    <main>
         <!-- primer sección -->
+        <h1 class="titulo-sobre-nosotros">Sobre nosotros</h1>
         <section class="sobre-nosotros">
           <div class="historia">
             <p>¡Bienvenido a Café Crisol, donde cada taza cuenta una historia de 35 años de pasión por el café!       Nosotros, Carla, Malena y Martín, fundamos esta cafetería en 1989 con un sueño compartido: ofrecer a nuestra comunidad una experiencia única en torno a la bebida que tanto amamos.
@@ -64,6 +67,7 @@
             <p>A lo largo de los años, hemos cultivado relaciones sólidas con proveedores de café de todo el mundo, seleccionando cuidadosamente granos que no solo satisfacen nuestros estándares exigentes, sino que también cuentan historias propias. Cada taza que servimos lleva consigo la esencia de los agricultores que trabajan arduamente y el arte de los tostadores que perfeccionan su oficio.
             </p>
           </div>
+          <!-- iframe de YT -->
           <iframe width="560" height="315" src="https://www.youtube.com/embed/df3JeXVWYWA?si=zkJJQ6Gn_sOzC198" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
         
@@ -119,7 +123,6 @@
         <!-- cuarta sección: carrusel BS-->
           <h2 class="cuarta-seccion">Lo que nos destaca</h2>
           <section class="destaca">
-
             <div class="slider">
               <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
@@ -129,13 +132,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="../medios/carrusel1.jpg" class="d-block w-100" alt="Imagen 1">
+                    <img src="../medios/carrusel1.jpg" class="d-block w-100" alt="Dos empleados del Bar trabajando juntos en un pedido">
                   </div>
                   <div class="carousel-item">
-                    <img src="../medios/carrusel2.jpg" class="d-block w-100" alt="Imagen 2">
+                    <img src="../medios/carrusel2.jpg" class="d-block w-100" alt="Marta, una empleada, sirviendo el café de la máquina">
                   </div>
                   <div class="carousel-item">
-                    <img src="../medios/carrusel3.jpg" class="d-block w-100" alt="Imagen 3">
+                    <img src="../medios/carrusel3.jpg" class="d-block w-100" alt="Dos empleados posando para la foto en horario laboral">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -168,12 +171,12 @@
               </ul>
             </div>
           </section>
-
     </main>
 
-    <!-- footer -->
+    <!--! FOOTER -------------------------------------------------------------------------------------->
     <footer>
         <p>¡Síguenos en nuestras redes sociales!</p>
+        <!-- íconos de redes sociales -->
         <div>
             <a href="https://www.facebook.com/crisolbar">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -200,10 +203,12 @@
             </a>
         </div>
 
+        <!-- derechos reservados -->
         <div class="derechos">
             <p>© 2023 Crisol Café Bar - Todos los derechos reservados.</p>
         </div>
     </footer>
+    
     <!-- Script BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
