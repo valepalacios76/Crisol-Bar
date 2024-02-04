@@ -69,6 +69,11 @@ header a{
     text-decoration: none;
 }
 
+.nav-transform:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
 
 /*! main de index ------------------------------------------------------------------------------------------------*/
 
@@ -246,6 +251,10 @@ section h2 span{
     border: #2d2220 solid 2px;
     width: 60%;
     height: 50%
+}
+
+.productos:hover{
+    background-color: #2d2220;
 }
 
 .productos img{
@@ -471,6 +480,7 @@ li span{
 }
 
 .container-form{
+    background-image: linear-gradient(to top, #2d2220,#5a413c);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -505,22 +515,90 @@ form input, textarea{
     border: #ffffff solid 1px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder, textarea::placeholder{
     color:#ffffff
+}
+
+input:focus, textarea:focus{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/* button de uiverse */
+.boton-ui{
+    transform: scale(0.7);
+    position: relative;
+    right: 50px;
+}
+
+.c-button {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .c-button--gooey {
+    color:  #5a413c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid  #bc8c64;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+  }
+  
+  .c-button--gooey .c-button__blobs div {
+    background-color: #bc8c64;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+  }
+  
+  .c-button--gooey:hover {
+    color: #fff;
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
   }
 
-form button{
-    color: #2d2220;
-    padding: 5px;
-    margin: 20px 10px;
-    font-size: 1.7rem;
-    width: 200px;
-    border-radius: 5px;
-}
-
-form button:hover{
-    background-color:#e2e2e2
-}
+/* ------------ */
 
 .container-form2{
     position: absolute;
