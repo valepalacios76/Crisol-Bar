@@ -1111,6 +1111,12 @@ footer p{
         align-items: center;
     }
 
+    .boton-ui{
+        transform: scale(0.7);
+        position: relative;
+        right: 1px;
+    }
+
     .container-form2{
         position: initial;
         width: 90%;
