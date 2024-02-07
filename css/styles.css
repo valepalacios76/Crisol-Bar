@@ -1,0 +1,941 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Krub:wght@400;700&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", serif;
+  line-height: 2.5rem;
+  background-color: #5a413c;
+}
+
+/* Header */
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+header img {
+  margin-left: 20px;
+  width: 80px;
+}
+header nav {
+  margin-right: 50px;
+}
+header nav ul li {
+  margin: 0 17px 0 17px;
+}
+header nav ul li .nav-transform:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* Footer */
+footer {
+  height: 50px;
+  padding: 0 15px 0 15px;
+  background-color: #2d2220;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer p {
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+footer div a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+footer div a svg {
+  display: inline;
+  margin-top: 5px;
+  width: 30px;
+}
+
+main {
+  color: #ffffff;
+  background-color: #5a413c;
+  display: flex;
+  flex-direction: column;
+}
+main .banner {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  background-image: url(../medios/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .banner img {
+  width: 65px;
+  margin-bottom: 15px;
+}
+main .banner h1 {
+  font-size: 4rem;
+}
+main .banner .subtitulo {
+  font-weight: 300;
+  font-size: 2rem;
+}
+main .informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 150px 10px 150px;
+  text-align: justify;
+}
+main .informacion h2 {
+  padding: 50px;
+  width: 50%;
+  background-color: #382926;
+  border: #ffffff solid 1px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+main .informacion h2 span {
+  font-weight: 300;
+  display: block;
+}
+main .informacion div p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 300;
+}
+main .caracteristicas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .caracteristicas .calidad, main .caracteristicas .servicios, main .caracteristicas .variedad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30.3%;
+  background-color: #382926;
+}
+main .caracteristicas .calidad h3, main .caracteristicas .servicios h3, main .caracteristicas .variedad h3 {
+  font-size: 2rem;
+  margin: 50px;
+}
+main .caracteristicas .calidad img, main .caracteristicas .servicios img, main .caracteristicas .variedad img {
+  width: 70%;
+  border: #5a413c solid 2px;
+  padding: 8px;
+}
+main .caracteristicas .calidad p, main .caracteristicas .servicios p, main .caracteristicas .variedad p {
+  margin: 30px 60px;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+main .caracteristicas .servicios {
+  background-color: #5a413c;
+}
+main .caracteristicas .variedad {
+  background-color: #382926;
+}
+main .segunda-info {
+  padding: 20px 50px;
+  margin-top: 20px;
+}
+main .segunda-info p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 50px;
+}
+main .destacados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .destacados h2 {
+  margin-top: 30px;
+}
+main .destacados .productos {
+  margin: 20px 50px 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: #2d2220 solid 2px;
+  width: 60%;
+  height: 50%;
+}
+main .destacados .productos:hover {
+  background-color: #2d2220;
+}
+main .destacados .productos .texto-productos {
+  padding-left: 10px;
+  width: 400px;
+  height: 300px;
+}
+main .destacados .productos .texto-productos .bg-mobile h3 {
+  font-size: 2rem;
+  margin: 50px;
+}
+main .destacados .productos .texto-productos p {
+  margin: 30px 30px;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+main .destacados .productos img {
+  width: 30%;
+  height: 50%;
+  text-align: justify;
+}
+
+/* main menú */
+/* Productos y Precios */
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(../medios/fondo-granos.jpg);
+  background-size: cover;
+}
+.main-menu .menu {
+  display: grid;
+  grid-template-columns: 4fr 1fr 0.05fr 4fr 1fr;
+  grid-template-rows: 200px 200px 200px 300px;
+  background-color: #2d2220;
+  width: 50%;
+  height: 1000px;
+  grid-template-areas: "titulo-menu    titulo-menu     division   bebidas-calientes   precios-calientes" "bebidas-frias  precios-frias   division   bebidas-calientes   precios-calientes" "bebidas-frias  precios-frias   division   desayunos           precios-desayunos" "tortas         precios-tortas  division   desayunos           precios-desayunos";
+  row-gap: 30px;
+}
+.main-menu .menu .titulo-menu {
+  grid-area: titulo-menu;
+  text-align: center;
+  padding-top: 40px;
+}
+.main-menu .menu .titulo-menu .texto {
+  font-size: 9rem;
+  margin: 0px;
+}
+.main-menu .menu .bebidas-calientes {
+  grid-area: bebidas-calientes;
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  margin-top: 35px;
+}
+.main-menu .menu .bebidas-calientes p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-menu .menu .bebidas-calientes h2 {
+  text-align: left;
+}
+.main-menu .menu .bebidas-frias {
+  grid-area: bebidas-frias;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+.main-menu .menu .bebidas-frias p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-menu .menu .bebidas-frias h2 {
+  text-align: left;
+}
+.main-menu .menu .desayunos {
+  margin-top: 32px;
+  grid-area: desayunos;
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+}
+.main-menu .menu .desayunos p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-menu .menu .desayunos h2 {
+  text-align: left;
+}
+.main-menu .menu .tortas {
+  margin-top: 32px;
+  grid-area: tortas;
+  padding-left: 30px;
+}
+.main-menu .menu .tortas p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-menu .menu .tortas h2 {
+  text-align: left;
+}
+.main-menu .menu .precios-frias {
+  grid-area: precios-frias;
+  margin-top: 68px;
+}
+.main-menu .menu .precios-frias p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-menu .menu .precios-calientes {
+  grid-area: precios-calientes;
+  margin-top: 72px;
+}
+.main-menu .menu .precios-calientes p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-menu .menu .precios-desayunos {
+  grid-area: precios-desayunos;
+  margin-top: 70px;
+}
+.main-menu .menu .precios-desayunos p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-menu .menu .precios-tortas {
+  grid-area: precios-tortas;
+  margin-top: 70px;
+}
+.main-menu .menu .precios-tortas p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-menu .menu .division {
+  grid-area: division;
+  background-color: #5a413c;
+}
+
+main .titulo-sobre-nosotros {
+  text-align: start;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 3rem;
+}
+main .sobre-nosotros {
+  display: flex;
+}
+main .sobre-nosotros .historia {
+  width: 50%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+main .caracteristicas-ns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #382926;
+  margin-bottom: 30px;
+}
+main .caracteristicas-ns .c1, main .caracteristicas-ns div {
+  text-align: center;
+  padding: 20px;
+}
+main .caracteristicas-ns .c1 h2, main .caracteristicas-ns div h2 {
+  font-size: 3rem;
+}
+main .caracteristicas-ns .c1 p, main .caracteristicas-ns div p {
+  font-size: 1.5rem;
+}
+main div h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+main div p {
+  font-size: 1.5rem;
+}
+main .tarjetas {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+main .tarjetas .elementos {
+  align-items: center;
+  height: 300px;
+  background-color: #382926;
+}
+main .tarjetas .elementos .imagen {
+  width: 90%;
+  padding-top: 10px;
+}
+main .tarjetas .elementos .nombre {
+  margin: 5px;
+  text-align: center;
+  padding: 0;
+  color: #ffffff;
+}
+main .tarjetas .elementos .card-body {
+  padding: 0;
+}
+main .tarjetas .elementos .card-body .texto-tarjeta {
+  padding: 0;
+  margin: 0 10px;
+  font-weight: 300;
+  text-align: start;
+  color: #ffffff;
+}
+main .cuarta-seccion {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 50px;
+}
+main .destaca {
+  background-color: #382926;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+main .destaca .slider {
+  width: 45%;
+  padding: 30px;
+  background-color: #382926;
+}
+main .destaca .cualidades {
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+main .destaca .cualidades li {
+  padding-top: 30px;
+}
+main .destaca .cualidades li span {
+  font-weight: 400;
+  display: block;
+}
+
+.container-form {
+  background-image: linear-gradient(to top, #2d2220, #5a413c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-form .titulo-contacto {
+  text-align: start;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 3rem;
+}
+.container-form .mensaje {
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 40%;
+  text-align: center;
+}
+.container-form .dos-tarjetas {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+.container-form .dos-tarjetas .formulario {
+  margin: 20px;
+  padding: 5px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  border: #ffffff solid 1px;
+  border-radius: 10px;
+}
+.container-form .dos-tarjetas .formulario input, .container-form .dos-tarjetas .formulario textarea {
+  color: #ffffff;
+  width: 200px;
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #5a413c;
+  border: #ffffff solid 1px;
+}
+.container-form .dos-tarjetas .formulario input::placeholder, .container-form .dos-tarjetas .formulario textarea::placeholder {
+  color: #ffffff;
+}
+.container-form .dos-tarjetas .formulario input:focus, .container-form .dos-tarjetas .formulario textarea:focus {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.container-form .dos-tarjetas .formulario .boton-ui {
+  transform: scale(0.7);
+  position: relative;
+  right: 50px;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button--gooey {
+  color: #5a413c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #bc8c64;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button--gooey .c-button__blobs div {
+  background-color: #bc8c64;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button--gooey:hover {
+  color: #fff;
+}
+.container-form .dos-tarjetas .formulario .boton-ui .c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+}
+.container-form .dos-tarjetas .container-form2 {
+  position: absolute;
+  bottom: 60px;
+  right: 52%;
+  width: 20%;
+  height: 300px;
+  background-color: #ffffff;
+  color: #5a413c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  margin: 30px;
+}
+.container-form .dos-tarjetas .container-form2 .icon1 {
+  width: 20px;
+  margin-top: 28px;
+}
+.container-form .dos-tarjetas .container-form2 .icon2 {
+  width: 20px;
+  margin-top: 65px;
+}
+.container-form .dos-tarjetas .container-form2 .icon3 {
+  width: 20px;
+  margin-top: 12px;
+}
+.container-form .dos-tarjetas .container-form2 .tarjeta-form {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+.container-form .dos-tarjetas .container-form2 p {
+  font-weight: 400;
+  padding: 10px;
+}
+
+.container-gral {
+  background-image: url(../medios/fondo-granos.jpg);
+  background-size: contain;
+}
+.container-gral .container {
+  width: 60%;
+  background-color: #2d2220;
+}
+.container-gral .h1faq {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 3rem;
+}
+.container-gral .grupo {
+  margin: 60px;
+}
+.container-gral .grupo .h2faq {
+  font-size: 2rem;
+}
+.container-gral .grupo .card {
+  background-color: #382926;
+}
+.container-gral .grupo .card .card-header {
+  background-color: #5a413c;
+}
+.container-gral .grupo .card .card-header .pregunta {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px;
+}
+.container-gral .grupo .card .respuesta {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Media Queries: mobile */
+@media (min-width: 367px) and (max-width: 480px) {
+  /* index */
+  main {
+    overflow: auto;
+    align-items: center;
+  }
+  main .banner {
+    width: 100%;
+    height: 130px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  main .banner img {
+    width: 40px;
+    padding-top: 10px;
+  }
+  main .banner h1 {
+    font-size: 2rem;
+  }
+  main .banner .subtitulo {
+    font-size: 1.5rem;
+  }
+  main .informacion {
+    margin-top: 20px;
+    justify-items: center;
+    width: 70%;
+  }
+  main .informacion h2 {
+    width: 270px;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  main .informacion div p {
+    font-size: 1.5rem;
+  }
+  main .caracteristicas {
+    flex-direction: column;
+  }
+  main .caracteristicas .calidad, main .caracteristicas .servicios, main .caracteristicas .variedad {
+    width: 100%;
+  }
+  main .caracteristicas .calidad h3, main .caracteristicas .servicios h3, main .caracteristicas .variedad h3 {
+    margin: 20px 80px 10px 80px;
+  }
+  main .caracteristicas .calidad img, main .caracteristicas .servicios img, main .caracteristicas .variedad img {
+    width: 70%;
+  }
+  main .caracteristicas .calidad p, main .caracteristicas .servicios p, main .caracteristicas .variedad p {
+    margin: 10px 60px;
+    font-size: 1.5rem;
+  }
+  main .segunda-info {
+    padding: 10px 0;
+    text-align: justify;
+    margin: 25px;
+  }
+  main .segunda-info p {
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+  }
+  main .destacados h2 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  main .destacados .productos .texto-productos {
+    padding-left: 0;
+  }
+  main .destacados .productos .texto-productos .bg-mobile h3 {
+    background-color: #2d2220;
+    border: #ffffff solid 2px;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 5px;
+  }
+  main .destacados .productos .texto-productos .bg-ethiopian, main .destacados .productos .texto-productos .bg-tarrazu, main .destacados .productos .texto-productos .bg-geisha {
+    overflow: auto;
+    width: 100%;
+    background-image: url(../medios/ethiopian.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  main .destacados .productos .texto-productos .bg-geisha {
+    background-image: url(../medios/geisha.jpg);
+  }
+  main .destacados .productos .texto-productos .bg-tarrazu {
+    box-sizing: content-box;
+    background-image: url(../medios/tarrazu.jpg);
+  }
+  main .destacados .productos .texto-productos p {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  main .destacados .productos img {
+    display: none;
+  }
+  /*menú*/
+  .main-menu .menu {
+    background-color: #ffffff;
+    width: 100%;
+    row-gap: 0;
+    height: 900px;
+  }
+  .main-menu .menu .titulo-menu {
+    padding: 0;
+    margin: 0;
+  }
+  .main-menu .menu .titulo-menu .texto {
+    color: #2d2220;
+    font-size: 7rem;
+    padding-top: 10px;
+  }
+  .main-menu .menu .bebidas-calientes {
+    color: #2d2220;
+    padding: 0 0 0 15px;
+    margin: 0;
+  }
+  .main-menu .menu .bebidas-frias {
+    color: #2d2220;
+    padding: 0 0 0 15px;
+  }
+  .main-menu .menu .desayunos {
+    color: #2d2220;
+    padding: 0 0 0 15px;
+    margin: 0;
+  }
+  .main-menu .menu .tortas {
+    color: #2d2220;
+    padding: 0 0 0 15px;
+    margin-top: 50px;
+  }
+  .main-menu .menu .precios-frias {
+    color: #2d2220;
+    margin-top: 95px;
+    padding: 0 10px;
+  }
+  .main-menu .menu .precios-calientes {
+    color: #2d2220;
+    margin-top: 35px;
+    padding: 0 10px;
+  }
+  .main-menu .menu .precios-desayunos {
+    color: #2d2220;
+    margin-top: 35px;
+    padding: 0 10px;
+  }
+  .main-menu .menu .precios-tortas {
+    color: #2d2220;
+    margin-top: 117px;
+    padding: 0 10px;
+  }
+  /* sobre nosotros */
+  main .titulo-sobre-nosotros {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 20px 0;
+    margin-bottom: 0;
+  }
+  main .sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  main .sobre-nosotros .historia {
+    width: 100%;
+  }
+  main .sobre-nosotros .historia p {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 20px;
+  }
+  main .sobre-nosotros iframe {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  main .caracteristicas-ns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #382926;
+    margin-bottom: 30px;
+  }
+  main .tarjetas {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+  main .tarjetas .elementos {
+    margin-top: 20px;
+  }
+  main .tarjetas .nombre {
+    color: #ffffff;
+  }
+  main .tarjetas .card-body .texto-tarjeta {
+    color: #ffffff;
+  }
+  main .destaca {
+    background-color: #382926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .destaca .slider {
+    width: 90%;
+  }
+  main .destaca .cualidades {
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+  main .destaca .cualidades li {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  /* contacto */
+  .container-form .tc2 {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 15px 0;
+  }
+  .container-form .mensaje {
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+  }
+  .container-form .dos-tarjetas {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-form .dos-tarjetas .formulario {
+    width: 70%;
+    align-items: center;
+  }
+  .container-form .dos-tarjetas .formulario input, .container-form .dos-tarjetas .formulario textarea {
+    width: 80%;
+  }
+  .container-form .dos-tarjetas .formulario .boton-ui {
+    transform: scale(0.7);
+    position: relative;
+    right: 1px;
+  }
+  .container-form .dos-tarjetas .container-form2 {
+    position: initial;
+    width: 90%;
+  }
+  .container-form .dos-tarjetas .container-form2 svg {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-form .dos-tarjetas .container-form2 svg .icon1 {
+    width: 20px;
+    margin-top: 47px;
+  }
+  .container-form .dos-tarjetas .container-form2 svg .icon2 {
+    width: 20px;
+    margin-top: 40px;
+  }
+  .container-form .dos-tarjetas .container-form2 svg .icon3 {
+    width: 20px;
+    margin-top: 15px;
+  }
+  /* faq */
+  .container-gral {
+    background-image: initial;
+  }
+  .container-gral .container {
+    width: 100%;
+  }
+  .container-gral .container .titulo-contacto {
+    margin: 25px 0 0 0;
+  }
+  .container-gral .container .accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-gral .container .grupo {
+    width: 90%;
+    margin: 40px 0 10px 0;
+  }
+  /* footer */
+  footer {
+    height: auto;
+    padding: 0 15px 0 15px;
+    background-color: #2d2220;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  footer .derechos {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

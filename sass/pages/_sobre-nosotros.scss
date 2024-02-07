@@ -1,0 +1,104 @@
+main{
+    .titulo-sobre-nosotros{
+        text-align:start;
+        margin-top: 30px;
+        margin-left: 40px;
+        font-size: 3rem;
+    }
+    .sobre-nosotros{
+        display: flex;
+        .historia{
+            width: 50%;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 40px 20px 40px;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+    .caracteristicas-ns{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: $light-brown1;
+        margin-bottom: 30px;
+        .c1{
+            text-align: center;
+            padding: 20px;
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.5rem
+            }
+        }
+    }
+    div{
+        @extend .c1;
+        h2{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        p{
+            font-size: 1.5rem
+        }
+    }
+    .tarjetas{
+        margin-top: 30px;
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 50px;
+        .elementos{
+            align-items: center;
+            height: 300px;
+            background-color: $light-brown1;
+            .imagen{
+                width: 90%;
+                padding-top: 10px;
+            }
+            .nombre{
+                margin: 5px;
+                text-align: center;
+                padding: 0;
+                color: $blanco
+            }
+            .card-body{
+                padding: 0;
+                .texto-tarjeta{
+                    padding: 0;
+                    margin: 0 10px;
+                    font-weight: 300;
+                    text-align: start;
+                    color: $blanco
+                }
+            }
+        }
+    }
+    .cuarta-seccion{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .destaca{
+        background-color: $light-brown1;
+        @include flex(row-reverse, space-around, center);
+        .slider{
+            width: 45%;
+            padding: 30px;
+            background-color: $light-brown1;
+        }
+        .cualidades{
+            width: 50%;
+            font-size: 1.5rem;
+            font-weight: 300;
+            li{
+                padding-top: 30px;
+                span{
+                    font-weight: 400;
+                    display: block;
+                }
+            }
+        }
+    }  
+}

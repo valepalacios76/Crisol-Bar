@@ -1,0 +1,33 @@
+// variables y header/footer
+@import "generales/variables";
+
+// Estilos generales
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Krub:wght@400;700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $font;
+    line-height: 2.5rem;
+    background-color: $light-brown2;
+}
+
+@import "generales/headerFooter";
+
+// mains
+@import "pages/index";
+@import "pages/menu";
+@import "pages/sobre-nosotros";
+@import "pages/contacto";
+@import "pages/faq";
+
+// media Queries 
+@import "generales/mediaQ-mobile";

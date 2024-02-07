@@ -1,0 +1,58 @@
+/* Header */
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color: $blanco;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1000;
+    img{
+        margin-left: 20px;
+        width: 80px;
+    }
+    nav{
+        margin-right: 50px;
+        ul{
+            li{
+                margin: 0 17px 0 17px;
+                .nav-transform{
+                    &:hover{
+                        transform: scale(1.1);
+                        transition: 0.2s;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+/* Footer */
+footer{
+    height: 50px;
+    padding: 0 15px 0 15px; 
+    background-color: $brown;
+    color: $blanco;
+    @include flex(row, space-around, center);
+    p{
+        margin: 5px;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    div{
+        a{
+            text-decoration: none;
+            margin-left: 10px; 
+            svg{
+                display: inline;
+                margin-top: 5px;
+                width: 30px;
+            }
+        }
+    }
+}

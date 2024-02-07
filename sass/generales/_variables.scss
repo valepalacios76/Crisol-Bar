@@ -1,0 +1,17 @@
+// Fuente
+$font:'Josefin Sans', serif;
+
+// Paleta de colores
+$brown: #2d2220;
+$light-brown1: #382926;
+$light-brown2: #5a413c;
+$milk-coffe: #bc8c64;
+$blanco: #ffffff;
+
+// mixin Flexbox
+@mixin flex($direccion, $justify, $align){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}

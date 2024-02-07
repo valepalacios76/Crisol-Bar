@@ -1,0 +1,120 @@
+/* main menú */
+/* Productos y Precios */
+.main-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-image: url(../medios/fondo-granos.jpg);
+        background-size: cover;
+        .menu{
+            display: grid;
+            grid-template-columns: 4fr 1fr 0.05fr 4fr 1fr;
+            grid-template-rows: 200px 200px 200px 300px;
+            background-color: $brown;
+            width: 50%;
+            height: 1000px;
+            grid-template-areas:
+            "titulo-menu    titulo-menu     division   bebidas-calientes   precios-calientes"
+            "bebidas-frias  precios-frias   division   bebidas-calientes   precios-calientes"
+            "bebidas-frias  precios-frias   division   desayunos           precios-desayunos"
+            "tortas         precios-tortas  division   desayunos           precios-desayunos";
+            row-gap: 30px;
+            .titulo-menu{
+                grid-area: titulo-menu;
+                text-align: center;
+                padding-top: 40px;
+                .texto{
+                    font-size: 9rem;
+                    margin: 0px;
+                }
+            }
+            .bebidas-calientes{
+                grid-area: bebidas-calientes;
+                width: 100%;
+                height: 100%;
+                padding-left: 30px ;
+                margin-top: 35px;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+                h2{
+                    text-align: left;
+                }
+            }
+            .bebidas-frias{
+                grid-area: bebidas-frias;
+                padding-left: 30px ;
+                margin-top: 30px;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+                h2{
+                    text-align: left;
+                }
+            }
+            .desayunos{
+                margin-top: 32px;
+                grid-area: desayunos;
+                width: 100%;
+                height: 100%;
+                padding-left: 30px ;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+                h2{
+                    text-align: left;
+                }
+            }
+            .tortas{
+                margin-top: 32px;
+                grid-area: tortas;
+                padding-left: 30px ;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+                h2{
+                    text-align: left;
+                }
+            }
+            .precios-frias{
+                grid-area: precios-frias;
+                margin-top: 68px;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+            }
+            .precios-calientes{
+                grid-area: precios-calientes;
+                margin-top: 72px;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+            }
+            .precios-desayunos{
+                grid-area: precios-desayunos;
+                margin-top: 70px;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+            }
+            .precios-tortas{
+                grid-area: precios-tortas;
+                margin-top: 70px;
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+            }
+            .division{
+                grid-area: division;
+                background-color: $light-brown2
+            }
+        }
+}

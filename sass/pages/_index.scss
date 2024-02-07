@@ -1,0 +1,142 @@
+main{
+    color: $blanco;
+    background-color: $light-brown2;
+    display: flex;
+    flex-direction: column;
+    .banner{
+        color: $blanco;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 80px;
+        background-image: url(../medios/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 65px;
+            margin-bottom: 15px;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        .subtitulo{
+            font-weight: 300;
+            font-size: 2rem;
+        }
+    }
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 150px 10px 150px;
+        text-align: justify;
+        h2{
+            padding: 50px;
+            width: 50%;
+            background-color: $light-brown1;
+            border: $blanco solid 1px;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            span{
+                font-weight: 300;
+                display: block;
+            }
+        }
+        div{
+            p{
+                padding-top: 10px;
+                padding-bottom: 20px;
+                color: $blanco;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+    .caracteristicas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .calidad, .servicios, .variedad{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30.3%;
+            background-color: $light-brown1;
+            h3{
+                font-size: 2rem;
+                margin: 50px;
+            }
+            img{
+                width: 70%;
+                border: $light-brown2 solid 2px;
+                padding: 8px;
+            }
+            p{
+                margin: 30px 60px;
+                text-align: justify;
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+        }
+        .servicios{
+            background-color: $light-brown2;
+        }
+        .variedad{
+            background-color: $light-brown1;
+        }
+    }
+    .segunda-info{
+        padding: 20px 50px;
+        margin-top: 20px;
+        p{
+            font-size: 2rem;
+            font-weight: 300;  
+            margin: 0 50px
+        }
+    }
+    .destacados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin-top: 30px;
+        }
+        .productos{
+            margin: 20px 50px 20px 50px;
+            @include flex(row, space-around, center);
+            border: $brown solid 2px;
+            width: 60%;
+            height: 50%;
+            &:hover{
+                background-color: $brown;
+            }
+            .texto-productos{
+                padding-left: 10px;
+                width: 400px;
+                height: 300px;
+                .bg-mobile{
+                    h3{
+                    font-size: 2rem;
+                    margin: 50px;
+                    }
+                }
+                p{
+                    margin:30px 30px;
+                    text-align: justify;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+            }
+            img{
+                width: 30%;
+                height: 50%;
+                text-align: justify;
+            }
+        }
+    }
+}

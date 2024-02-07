@@ -1,0 +1,38 @@
+.container-gral{
+    background-image: url(../medios/fondo-granos.jpg);
+    background-size:contain ;
+    .container{
+    width: 60%;
+    background-color: $brown;
+    }
+    .h1faq{
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 40px;
+        font-size: 3rem;
+    }
+    .grupo{
+        margin: 60px;
+        .h2faq{
+            font-size: 2rem;
+        }
+        .card{
+            background-color: $light-brown1;
+            .card-header{
+                background-color: $light-brown2;
+                .pregunta{
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    color: $blanco;  
+                    margin: 10px;
+                }
+            }
+            .respuesta{
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: $blanco;
+                padding: 20px;
+            }
+        }
+    }
+}
