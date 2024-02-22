@@ -454,27 +454,33 @@ main .destaca .cualidades li span {
 }
 .container-form .dos-tarjetas {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   margin-bottom: 20px;
+  width: 100%;
+  justify-content: center;
 }
 .container-form .dos-tarjetas .formulario {
   margin: 20px;
   padding: 5px;
-  width: 400px;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: flex-end;
+  align-items: center;
   border: #ffffff solid 1px;
   border-radius: 10px;
 }
+.container-form .dos-tarjetas .formulario p {
+  margin-top: 20px;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
 .container-form .dos-tarjetas .formulario input, .container-form .dos-tarjetas .formulario textarea {
   color: #ffffff;
-  width: 200px;
+  width: 85%;
   font-size: 1.7rem;
   font-weight: 300;
   padding: 5px;
-  margin: 10px;
+  margin: 15px;
   border-radius: 5px;
   background-color: #5a413c;
   border: #ffffff solid 1px;
@@ -488,8 +494,6 @@ main .destaca .cualidades li span {
 }
 .container-form .dos-tarjetas .formulario .boton-ui {
   transform: scale(0.7);
-  position: relative;
-  right: 50px;
 }
 .container-form .dos-tarjetas .formulario .boton-ui .c-button {
   color: #000;
@@ -550,39 +554,54 @@ main .destaca .cualidades li span {
   transform: scale(1.4) translateY(0) translateZ(0);
 }
 .container-form .dos-tarjetas .container-form2 {
-  position: absolute;
-  bottom: 60px;
-  right: 52%;
-  width: 20%;
-  height: 300px;
+  width: 30%;
+  height: 500px;
   background-color: #ffffff;
   color: #5a413c;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 30px;
-  margin: 30px;
+  padding: 30px 30px 0px 30px;
+  margin: 20px 30px 0px 50px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 5fr;
+  grid-template-areas: ".           encuentrenos" "direccion   texto-direccion" "email       texto-email" "telefono    texto-telefono" "iframe      iframe";
+  align-content: stretch;
+  justify-items: start;
 }
-.container-form .dos-tarjetas .container-form2 .icon1 {
+.container-form .dos-tarjetas .container-form2 .icon1, .container-form .dos-tarjetas .container-form2 .icon3, .container-form .dos-tarjetas .container-form2 .icon2 {
+  grid-area: direccion;
   width: 20px;
-  margin-top: 28px;
+  justify-self: end;
+  margin-right: 10px;
+  align-self: flex-start;
 }
 .container-form .dos-tarjetas .container-form2 .icon2 {
-  width: 20px;
-  margin-top: 65px;
+  grid-area: email;
 }
 .container-form .dos-tarjetas .container-form2 .icon3 {
-  width: 20px;
-  margin-top: 12px;
+  grid-area: telefono;
 }
 .container-form .dos-tarjetas .container-form2 .tarjeta-form {
-  margin: 0;
-  padding: 0;
+  grid-area: encuentrenos;
   font-size: 2rem;
 }
-.container-form .dos-tarjetas .container-form2 p {
+.container-form .dos-tarjetas .container-form2 .texto-telefono {
   font-weight: 400;
-  padding: 10px;
+  grid-area: texto-telefono;
+}
+.container-form .dos-tarjetas .container-form2 .texto-email {
+  font-weight: 400;
+  grid-area: texto-email;
+}
+.container-form .dos-tarjetas .container-form2 .texto-direccion {
+  font-weight: 400;
+  grid-area: texto-direccion;
+}
+.container-form .dos-tarjetas .container-form2 iframe {
+  justify-self: center;
+  width: 90%;
+  height: 240px;
+  grid-area: iframe;
 }
 
 .container-gral {
@@ -625,7 +644,7 @@ main .destaca .cualidades li span {
 }
 
 /* Media Queries: mobile */
-@media (min-width: 367px) and (max-width: 480px) {
+@media (min-width: 370px) and (max-width: 480px) {
   /* index */
   main {
     overflow: auto;
@@ -860,7 +879,7 @@ main .destaca .cualidades li span {
     margin: 15px 0;
   }
   .container-form .mensaje {
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 80%;
     text-align: center;
   }
@@ -870,7 +889,8 @@ main .destaca .cualidades li span {
     align-items: center;
   }
   .container-form .dos-tarjetas .formulario {
-    width: 70%;
+    margin-top: 10px;
+    width: 100%;
     align-items: center;
   }
   .container-form .dos-tarjetas .formulario input, .container-form .dos-tarjetas .formulario textarea {
@@ -882,14 +902,14 @@ main .destaca .cualidades li span {
     right: 1px;
   }
   .container-form .dos-tarjetas .container-form2 {
-    position: initial;
-    width: 90%;
+    margin: 20px 0 0 0;
+    width: 100%;
   }
   .container-form .dos-tarjetas .container-form2 svg {
     display: flex;
     flex-direction: column;
   }
-  .container-form .dos-tarjetas .container-form2 svg .icon1 {
+  .container-form .dos-tarjetas .container-form2 svg .icon1, .container-form .dos-tarjetas .container-form2 svg .icon2, .container-form .dos-tarjetas .container-form2 svg .icon3 {
     width: 20px;
     margin-top: 47px;
   }

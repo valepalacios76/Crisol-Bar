@@ -2,7 +2,7 @@
 
 
 
-@media (min-width:367px) and (max-width: 480px) {
+@media (min-width:370px) and (max-width: 480px) {
     /* index */
     main{
         overflow: auto;
@@ -252,7 +252,7 @@
             margin: 15px 0 ;
         }
         .mensaje{
-            font-size: 2rem;
+            font-size: 1.8rem;
             width: 80%;
             text-align: center;
         }
@@ -261,7 +261,8 @@
             flex-direction: column;
             align-items: center;
             .formulario{
-                width: 70%;
+                margin-top: 10px;
+                width: 100%;
                 align-items: center;
                 input, textarea{
                     width: 80%;
@@ -273,8 +274,8 @@
                 }
             }
             .container-form2{
-                position: initial;
-                width: 90%;
+                margin: 20px 0 0 0;
+                width: 100%;
                 svg{
                     display: flex;
                     flex-direction: column;
@@ -290,10 +291,9 @@
                     
                     .icon3{
                         width: 20px;
-                        margin-top: 15px
+                        margin-top: 15px;
                     }
                 }
-                
             }
         }
     }
