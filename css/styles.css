@@ -333,13 +333,15 @@ main .destacados .productos img {
 }
 
 main .titulo-sobre-nosotros {
+  background-color: #382926;
   text-align: start;
-  margin-top: 30px;
-  margin-left: 40px;
+  padding: 30px 0 0 40px;
   font-size: 3rem;
 }
 main .sobre-nosotros {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 main .sobre-nosotros .historia {
   width: 50%;
@@ -349,6 +351,10 @@ main .sobre-nosotros .historia {
   margin: 20px 40px 20px 40px;
   font-size: 1.5rem;
   font-weight: 300;
+}
+main .sobre-nosotros iframe {
+  align-items: center;
+  padding: 0 15px 0 15px;
 }
 main .caracteristicas-ns {
   display: flex;
@@ -845,11 +851,11 @@ main .destaca .cualidades li span {
   }
   /* sobre nosotros */
   main .titulo-sobre-nosotros {
-    text-align: center;
     font-size: 2.5rem;
-    padding: 0;
-    margin: 20px 0;
-    margin-bottom: 0;
+    background-color: #382926;
+    text-align: center;
+    padding: 30px 0 0 0;
+    width: 100%;
   }
   main .sobre-nosotros {
     display: flex;
@@ -1222,6 +1228,63 @@ main .destaca .cualidades li span {
   .main-menu .menu .precios-tortas {
     margin-top: 117px;
     padding: 0 10px;
+  }
+  /*sobre nosotros*/
+  main .titulo-sobre-nosotros {
+    background-color: #382926;
+    text-align: center;
+    padding: 30px 0 0 0;
+    width: 100%;
+  }
+  main .sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  main .sobre-nosotros .historia {
+    width: 100%;
+  }
+  main .sobre-nosotros .historia p {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 20px;
+  }
+  main .sobre-nosotros iframe {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  main .caracteristicas-ns {
+    width: 100%;
+  }
+  main .tarjetas {
+    width: 100%;
+  }
+  main .tarjetas .elementos {
+    margin: 10px;
+  }
+  main .cuarta-seccion {
+    margin: 0;
+  }
+  main .destaca {
+    background-color: #382926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .destaca .slider {
+    width: 500px;
+  }
+  main .destaca .cualidades {
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+  main .destaca .cualidades li {
+    padding-top: 0px;
+    padding-bottom: 20px;
   }
   /*404 not found*/
   .main-error {
