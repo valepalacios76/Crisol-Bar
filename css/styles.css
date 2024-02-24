@@ -152,8 +152,8 @@ main .caracteristicas .calidad img, main .caracteristicas .servicios img, main .
   padding: 8px;
 }
 main .caracteristicas .calidad p, main .caracteristicas .servicios p, main .caracteristicas .variedad p {
-  margin: 30px 60px;
-  text-align: justify;
+  margin: 30px 40px;
+  text-align: left;
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -209,6 +209,7 @@ main .destacados .productos .texto-productos p {
   font-weight: 300;
 }
 main .destacados .productos img {
+  padding-right: 20px;
   width: 30%;
   height: 50%;
   text-align: justify;
@@ -1077,8 +1078,123 @@ main .destaca .cualidades li span {
   }
   main .informacion h2 {
     height: 100px;
-    width: 80%;
+    width: 400px;
+    font-size: 1.8rem;
+    padding: 25px;
+    margin: 20px;
+  }
+  main .informacion div p {
+    font-size: 1.6rem;
+    margin: 0 35px 0 35px;
+  }
+  main .caracteristicas {
+    flex-direction: column;
+  }
+  main .caracteristicas .calidad, main .caracteristicas .servicios, main .caracteristicas .variedad {
+    width: 100%;
+  }
+  main .caracteristicas .calidad h3, main .caracteristicas .servicios h3, main .caracteristicas .variedad h3 {
+    margin: 20px 80px 10px 80px;
+  }
+  main .caracteristicas .calidad img, main .caracteristicas .servicios img, main .caracteristicas .variedad img {
+    width: 50%;
+  }
+  main .caracteristicas .calidad p, main .caracteristicas .servicios p, main .caracteristicas .variedad p {
+    padding-bottom: 20px;
+    margin: 10px 60px;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  main .segunda-info {
+    padding: 0;
+    margin: 0;
+  }
+  main .segunda-info p {
+    padding-top: 25px;
+    font-size: 1.6rem;
+    margin: 0 35px 0 35px;
+    text-align: justify;
+  }
+  main .destacados {
+    width: 100%;
+  }
+  main .destacados h2 {
     font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+  main .destacados .productos {
+    width: 60%;
+  }
+  main .destacados .productos .texto-productos {
+    width: 100%;
+    padding-left: 0;
+  }
+  main .destacados .productos .texto-productos .bg-mobile {
+    overflow: auto;
+    height: 150px;
+    width: 100%;
+    background-image: url(../../medios/ethiopian.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  main .destacados .productos .texto-productos .bg-mobile h3 {
+    background-color: #2d2220;
+    border: #ffffff solid 2px;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 5px;
+    width: 250px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  main .destacados .productos .texto-productos .bg-geisha {
+    overflow: auto;
+    width: 100%;
+    background-image: url(../../medios/geisha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  main .destacados .productos .texto-productos .bg-geisha h3 {
+    background-color: #2d2220;
+    border: #ffffff solid 2px;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 5px;
+    width: 70%;
+  }
+  main .destacados .productos .texto-productos .bg-tarrazu {
+    overflow: auto;
+    width: 100%;
+    background-image: url(../../medios/tarrazu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  main .destacados .productos .texto-productos p {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  main .destacados .productos img {
+    display: none;
+  }
+  footer {
+    height: auto;
+    padding: 0 15px 0 15px;
+    background-color: #2d2220;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  footer .derechos {
+    margin-left: 0;
+    text-align: center;
   }
 }
 

@@ -23,9 +23,128 @@
             width: 100%;
             h2{
                 height: 100px;
-                width: 80%;
-                font-size: 2rem;
+                width: 400px;
+                font-size: 1.8rem;
+                padding: 25px;
+                margin: 20px;
             }
+            div{
+                p{
+                    font-size: 1.6rem;
+                    margin: 0 35px 0 35px;
+                }
+            }
+        }
+        .caracteristicas{
+            flex-direction: column;
+            .calidad, .servicios, .variedad{
+                width: 100%;
+                h3{
+                    margin: 20px 80px 10px 80px;
+                }
+                img{
+                    width: 50%;
+                }
+                p{
+                    padding-bottom: 20px;
+                    margin: 10px 60px;
+                    font-size: 1.5rem;
+                    text-align: justify;
+                }
+            }
+        }
+        .segunda-info{
+            padding: 0;
+            margin: 0;
+            p{
+                padding-top: 25px;
+                font-size: 1.6rem;
+                margin: 0 35px 0 35px;
+                text-align: justify;
+            }
+        }
+        .destacados{
+            width: 100%;
+            h2{
+                font-size: 2rem;
+                margin-bottom: 0px;
+                margin-top: 30px;
+            }
+            .productos{
+                width: 60%;
+                .texto-productos{
+                    width: 100%;
+                    padding-left: 0;
+                    .bg-mobile{
+                        overflow: auto;
+                        height: 150px;
+                        width: 100%;
+                        background-image: url(../../medios/ethiopian.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        h3{
+                            background-color: $brown;
+                            border: $blanco solid 2px;
+                            text-align: center;
+                            font-size: 1.9rem;
+                            padding: 5px;
+                            width: 250px;
+                            margin: auto;
+                            margin-top: 50px;
+                        }
+                    }
+                    .bg-geisha{
+                        overflow: auto;
+                        width: 100%;
+                        background-image: url(../../medios/geisha.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        h3{
+                            background-color: $brown;
+                            border: $blanco solid 2px;
+                            text-align: center;
+                            font-size: 1.9rem;
+                            padding: 5px;
+                            width: 70%;
+                        }
+                    }
+                    .bg-tarrazu{
+                        overflow: auto;
+                        width: 100%;
+                        background-image: url(../../medios/tarrazu.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 1.5rem;
+                        padding: 10px;
+                        margin-bottom: 0;
+                    }
+                }
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    footer{
+        height: auto;
+        padding: 0 15px 0 15px; 
+        background-color: $brown;
+        color: $blanco;
+        @include flex(column, flex-start, center);
+        .derechos{
+            margin-left: 0;
+            text-align: center;
         }
     }
 }
