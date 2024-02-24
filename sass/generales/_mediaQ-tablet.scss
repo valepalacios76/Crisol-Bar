@@ -131,11 +131,109 @@
             }
         }
     }
+/*menu*/
+.main-menu{
+    .menu{
+        width: 500px;
+        .titulo-menu{
+            padding: 0;
+            margin: 0;
+            .texto{
+                padding-top: 10px;
+            }
+        }
+        .bebidas-calientes{
+            padding: 35px 0 0 15px;
+            margin: 0;
+        }
+        .bebidas-frias{
+            margin: 0;
+            padding: 0 0 0 15px;
+            span{
+                display: block;
+            }
+        }
+        .desayunos{
+            padding: 35px 0 0 15px;
+            margin: 0;
+        }
+        .tortas{
+            padding: 0 0 0 15px;
+            margin-top: 50px;
+            span{
+                display: block;
+            }
+        }
+        .precios-frias{
+            margin-top: 65px;
+            padding: 0 10px;
+        }
+        .precios-tortas{
+            margin-top: 117px;
+            padding: 0 10px;
+        }
+    }
+}
 
 
 
 
+/*404 not found*/
+    .main-error{
+        background-color: $blanco;
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            justify-content: flex-start;
+            height: 600px;
+            @include flex(column, center, center);
+            height: auto;
+            .texto1{
+                font-size: 5rem;
+                padding: 10px;
+                text-align: center;
+                align-self: center;
+                display: block;
+                
+            }
+            .texto2{
+                font-size: 1.7rem;
+                color: $brown;
+                display: block;
+                padding: 0 20px 0 20px;
+                margin: 0;
+                width: 80%;
+            }
+            .enlace3{
+                font-size: 1.5rem;
+                align-self: center;
+                color: $light-brown2;
+                padding-bottom: 10px;
+                visibility: visible;
+            }
+            p{
+                margin: 10px;
+                text-align: center;
+                display: block;
+            }
+            .fondo{
+                background-image: url(../../medios/not-found.PNG);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 350px;
+                margin: 10px;
+                height: 350px;
+            }
+        }
+    }
 
+
+
+
+/*footer*/
     footer{
         height: auto;
         padding: 0 15px 0 15px; 

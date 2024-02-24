@@ -226,7 +226,7 @@ main .destacados .productos img {
 }
 .main-menu .menu {
   display: grid;
-  grid-template-columns: 4fr 1fr 0.05fr 4fr 1fr;
+  grid-template-columns: 4fr 1fr 0.05fr 4fr 1.3fr;
   grid-template-rows: 200px 200px 200px 300px;
   background-color: #2d2220;
   width: 50%;
@@ -1182,6 +1182,101 @@ main .destaca .cualidades li span {
   main .destacados .productos img {
     display: none;
   }
+  /*menu*/
+  .main-menu .menu {
+    width: 500px;
+  }
+  .main-menu .menu .titulo-menu {
+    padding: 0;
+    margin: 0;
+  }
+  .main-menu .menu .titulo-menu .texto {
+    padding-top: 10px;
+  }
+  .main-menu .menu .bebidas-calientes {
+    padding: 35px 0 0 15px;
+    margin: 0;
+  }
+  .main-menu .menu .bebidas-frias {
+    margin: 0;
+    padding: 0 0 0 15px;
+  }
+  .main-menu .menu .bebidas-frias span {
+    display: block;
+  }
+  .main-menu .menu .desayunos {
+    padding: 35px 0 0 15px;
+    margin: 0;
+  }
+  .main-menu .menu .tortas {
+    padding: 0 0 0 15px;
+    margin-top: 50px;
+  }
+  .main-menu .menu .tortas span {
+    display: block;
+  }
+  .main-menu .menu .precios-frias {
+    margin-top: 65px;
+    padding: 0 10px;
+  }
+  .main-menu .menu .precios-tortas {
+    margin-top: 117px;
+    padding: 0 10px;
+  }
+  /*404 not found*/
+  .main-error {
+    background-color: #ffffff;
+  }
+  .main-error section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    justify-content: flex-start;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .main-error section .texto1 {
+    font-size: 5rem;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    display: block;
+  }
+  .main-error section .texto2 {
+    font-size: 1.7rem;
+    color: #2d2220;
+    display: block;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    width: 80%;
+  }
+  .main-error section .enlace3 {
+    font-size: 1.5rem;
+    align-self: center;
+    color: #5a413c;
+    padding-bottom: 10px;
+    visibility: visible;
+  }
+  .main-error section p {
+    margin: 10px;
+    text-align: center;
+    display: block;
+  }
+  .main-error section .fondo {
+    background-image: url(../../medios/not-found.PNG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 350px;
+    margin: 10px;
+    height: 350px;
+  }
+  /*footer*/
   footer {
     height: auto;
     padding: 0 15px 0 15px;
