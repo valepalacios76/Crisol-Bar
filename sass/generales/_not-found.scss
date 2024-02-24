@@ -1,0 +1,25 @@
+.main-error{
+    background-color: $blanco;
+    section{
+        .texto1{
+            font-size: 1.8rem;
+            color: $brown;
+            display: none;
+        }
+        .texto2{
+            display: none;
+        }
+        .enlace3{
+            visibility: hidden;
+        }
+        .fondo{
+            background-image: url(../../medios/not-found-desktop.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            height: 600px;
+            margin: 0;
+        }
+    }
+}

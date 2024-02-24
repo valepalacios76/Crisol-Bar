@@ -12,7 +12,7 @@
     }
 
     .mensaje {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight: 300;
         width: 40%;
         text-align: center;
@@ -59,6 +59,19 @@
                 &:focus {
                     transform: scale(1.05);
                     transition: 0.2s;
+                }
+            }
+            .check{
+                display: flex;
+                flex-direction: row-reverse;
+                .cuadradito{
+                    width: auto;
+                }
+
+                label{
+                    padding-right: 10px;
+                    font-weight: 300;
+                    font-size: 1.5rem;
                 }
             }
 
@@ -134,7 +147,7 @@
 
         .container-form2 {
             width: 30%;
-            height: 500px;
+            height: 540px;
             background-color: $blanco;
             color: $light-brown2;
             padding: 30px 30px 0px 30px;
