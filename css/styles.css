@@ -1286,6 +1286,57 @@ main .destaca .cualidades li span {
     padding-top: 0px;
     padding-bottom: 20px;
   }
+  /*contacto*/
+  .container-form .tc2 {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 15px 0;
+  }
+  .container-form .mensaje {
+    font-size: 1.6rem;
+    width: 400px;
+    text-align: center;
+  }
+  .container-form .dos-tarjetas {
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-form .dos-tarjetas .formulario {
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+  }
+  .container-form .dos-tarjetas .formulario input, .container-form .dos-tarjetas .formulario textarea {
+    width: 80%;
+  }
+  .container-form .dos-tarjetas .formulario .boton-ui {
+    transform: scale(0.7);
+    position: relative;
+    right: 1px;
+  }
+  .container-form .dos-tarjetas .container-form2 {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+  .container-form .dos-tarjetas .container-form2 svg {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-form .dos-tarjetas .container-form2 svg .icon1, .container-form .dos-tarjetas .container-form2 svg .icon2, .container-form .dos-tarjetas .container-form2 svg .icon3 {
+    width: 20px;
+    margin-top: 47px;
+  }
+  .container-form .dos-tarjetas .container-form2 svg .icon2 {
+    width: 20px;
+    margin-top: 40px;
+  }
+  .container-form .dos-tarjetas .container-form2 svg .icon3 {
+    width: 20px;
+    margin-top: 15px;
+  }
   /*404 not found*/
   .main-error {
     background-color: #ffffff;
