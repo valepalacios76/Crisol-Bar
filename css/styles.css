@@ -689,7 +689,7 @@ main .destaca .cualidades li span {
 @media (min-width: 370px) and (max-width: 480px) {
   /* index */
   main {
-    overflow: auto;
+    overflow: visible;
     align-items: center;
   }
   main .banner {
@@ -749,6 +749,9 @@ main .destaca .cualidades li span {
     width: 100%;
     margin: 0;
   }
+  main .destacados {
+    width: 100%;
+  }
   main .destacados h2 {
     font-size: 2rem;
     margin-bottom: 0px;
@@ -765,7 +768,7 @@ main .destaca .cualidades li span {
     padding: 5px;
   }
   main .destacados .productos .texto-productos .bg-ethiopian, main .destacados .productos .texto-productos .bg-tarrazu, main .destacados .productos .texto-productos .bg-geisha {
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     background-image: url(../medios/ethiopian.jpg);
     background-repeat: no-repeat;
@@ -776,7 +779,6 @@ main .destaca .cualidades li span {
     background-image: url(../medios/geisha.jpg);
   }
   main .destacados .productos .texto-productos .bg-tarrazu {
-    box-sizing: content-box;
     background-image: url(../medios/tarrazu.jpg);
   }
   main .destacados .productos .texto-productos p {
@@ -1140,7 +1142,7 @@ main .destaca .cualidades li span {
     overflow: auto;
     height: 150px;
     width: 100%;
-    background-image: url(../../medios/ethiopian.jpg);
+    background-image: url(../medios/ethiopian.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1158,7 +1160,7 @@ main .destaca .cualidades li span {
   main .destacados .productos .texto-productos .bg-geisha {
     overflow: auto;
     width: 100%;
-    background-image: url(../../medios/geisha.jpg);
+    background-image: url(../medios/geisha.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1174,7 +1176,7 @@ main .destaca .cualidades li span {
   main .destacados .productos .texto-productos .bg-tarrazu {
     overflow: auto;
     width: 100%;
-    background-image: url(../../medios/tarrazu.jpg);
+    background-image: url(../medios/tarrazu.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
