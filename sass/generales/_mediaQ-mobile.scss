@@ -333,6 +333,7 @@
             @include flex(column, center, center);
             height: auto;
             .texto1{
+                color: $brown;
                 font-size: 5rem;
                 padding: 10px;
                 text-align: center;
@@ -341,10 +342,11 @@
                 
             }
             .texto2{
+                width: 80%;
                 font-size: 1.7rem;
                 color: $brown;
                 display: block;
-                padding: 0 15px 0 15px;
+                padding: 0 10px 0 10px;
                 margin: 0;
             }
             .enlace3{
@@ -360,13 +362,7 @@
                 display: block;
             }
             .fondo{
-                background-image: url(../medios/not-found.PNG);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                width: 350px;
-                margin: 10px;
-                height: 350px;
+                width: 80%;
             }
         }
     }

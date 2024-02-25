@@ -1,25 +1,38 @@
 .main-error{
     background-color: $blanco;
     section{
+        @include flex(column, flex-start, center);
         .texto1{
-            font-size: 1.8rem;
             color: $brown;
-            display: none;
+            font-size: 5rem;
+            padding: 40px 0 40px 0;
+            text-align: center;
+            align-self: center;
+            display: block;
         }
         .texto2{
-            display: none;
+            width: 600px;
+            font-size: 1.7rem;
+            color: $brown;
+            display: block;
+            padding: 0 15px 0 15px;
+            margin: 0;
         }
         .enlace3{
-            visibility: hidden;
+            font-size: 1.5rem;
+            align-self: center;
+            color: $light-brown2;
+            padding-bottom: 10px;
+            visibility: visible;
+            padding-bottom: 30px;
+        }
+        p{
+            margin: 10px;
+            text-align: center;
+            display: block;
         }
         .fondo{
-            background-image: url(../medios/not-found-desktop.PNG);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            width: 100%;
-            height: 600px;
-            margin: 0;
+            width: 40%;
         }
     }
 }
